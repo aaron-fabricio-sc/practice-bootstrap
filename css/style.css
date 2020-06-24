@@ -1,0 +1,156 @@
+#boton, #formulario__orador .btn-platzi, #main #carrusel .overlay .container .row .btn-platzi {
+  background: #97c93e;
+  color: white;
+}
+#boton:hover, #formulario__orador .btn-platzi:hover, #main #carrusel .overlay .container .row .btn-platzi:hover {
+  background: #547121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background: linear-gradient(90deg, #1c3646, #273b47 25%, #1e5372);
+}
+.menu img {
+  width: 100px;
+}
+.menu #list li a {
+  font-size: 16px;
+}
+.menu #list li a:hover {
+  text-decoration: underline;
+}
+.menu #list li .tickets {
+  color: #97c93e;
+}
+
+#main #carrusel {
+  position: relative;
+}
+#main #carrusel .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 10;
+}
+#main #carrusel .overlay .container {
+  height: 100%;
+}
+#main #carrusel .overlay .container .row {
+  height: 100%;
+  align-items: center;
+}
+#main #carrusel .overlay .container .row h1 {
+  font-weight: 800;
+}
+#main #carrusel .overlay .container .row p {
+  font-size: 16px;
+}
+#main .carousel-inner img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+#oradores .container .row .card-body {
+  background: #1e5372;
+  color: white;
+  text-align: center;
+}
+#oradores .container .row .card-body h5 {
+  font-weight: 800;
+}
+
+#fecha img {
+  width: 100%;
+}
+#fecha .direccion {
+  background-color: #1c3646;
+  color: white;
+  box-sizing: border-box;
+}
+#fecha .direccion p {
+  font-size: 14px;
+}
+#fecha .direccion a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(90deg, #1c3646, #273b47 25%, #1e5372);
+}
+footer .container .row .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .menu #list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #oradores .container .row p {
+    font-size: 16px;
+  }
+
+  #fecha .direccion p {
+    font-size: 12px;
+  }
+  #fecha .direccion a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .menu #list li a {
+    color: white;
+    font-size: 14px;
+  }
+
+  #main #carrusel .overlay .container .row h1 {
+    font-weight: 800;
+    font-size: 24px;
+  }
+  #main #carrusel .overlay .container .row .btn-outline-light {
+    font-size: 14px;
+  }
+  #main #carrusel .overlay .container .row .btn-platzi {
+    font-size: 14px;
+  }
+  #main .carousel-inner img {
+    height: 70vh;
+    object-fit: cover;
+  }
+
+  #oradores .container .row .imagen {
+    height: 300px;
+    object-fit: cover;
+  }
+  #oradores .container .row h3 {
+    font-size: 20px;
+  }
+  #oradores .container .row p {
+    font-size: 14px;
+  }
+
+  #fecha .direccion p {
+    font-size: 14px;
+  }
+  #fecha .direccion a {
+    font-size: 14px;
+  }
+
+  footer .container .row .links a {
+    font-size: 14px;
+  }
+}

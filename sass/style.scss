@@ -1,0 +1,307 @@
+$font-size-xbig:24px;
+$font-size-big :20px;
+$font-size-medium: 16px;
+$font-size-small: 14px;
+$font-size-xsmall: 12px;
+
+$color-claro: white;
+$color-oscuro: black;
+$color-platzi:#97c93e;
+
+
+
+$width-small:575px;
+$width-medium:767px;
+$width-large:991px;
+$width-xlarge:1999px;
+
+#boton{
+    background: $color-platzi;
+    color: white;
+    &:hover{
+    background: #547121;
+ } 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+
+    background: linear-gradient(90deg,#1c3646,#273b47 25%,#1e5372);
+
+    
+    
+    img{
+        width: 100px;
+    }
+    #list{
+        li{
+            a{
+              
+                font-size: $font-size-medium;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .tickets{
+                color: $color-platzi;
+            }
+            
+
+        }
+        
+    }
+}
+
+#main{
+    
+    #carrusel{
+        position: relative;
+        .overlay{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            z-index: 10;
+            .container{
+                height: 100%;
+               
+                .row{
+                    height: 100%;
+                    align-items: center;
+                    h1{
+                        font-weight: 800;
+                    }
+                    p{
+                        font-size: $font-size-medium;
+                    }
+                    .btn-platzi{
+                        @extend #boton
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .carousel-inner{
+        img{
+            height: 70vh;
+            object-fit: cover;
+            
+        }
+    }
+}
+
+#oradores{
+    .container{
+        .row{
+            
+            .card-body{
+                background: #1e5372; 
+                color:$color-claro;
+                text-align: center;
+                h5{
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+
+#fecha{
+  
+    img{
+        width: 100%;
+    }
+    .direccion{
+        background-color: #1c3646;
+        color: $color-claro;
+        box-sizing: border-box;
+    
+ 
+       
+        p{
+            font-size: $font-size-small;
+           
+        }
+        a{
+            font-size: $font-size-medium;
+            text-decoration: none;
+      
+        }
+    }
+}
+#formulario__orador{
+    .btn-platzi{
+        @extend #boton;
+    }
+}
+
+footer{
+    width: 100%;
+
+    background: linear-gradient(90deg,#1c3646,#273b47 25%,#1e5372);
+    .container{
+        .row{
+            .links{
+                a{
+                    color: $color-claro;
+                    text-decoration: none;
+                    font-size: $font-size-medium;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:$width-large){
+    .menu{
+        #list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            
+        }
+    }
+    #oradores{
+        .container{
+            .row{
+                
+                p{
+                    font-size: $font-size-medium;
+                }
+                
+            }
+        }
+    }
+    #fecha{
+  
+        .direccion{
+           
+            p{
+                font-size: $font-size-xsmall;
+               
+            }
+            a{
+                font-size: $font-size-xsmall;
+          
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+@media screen and (max-width:$width-small){
+    .menu{
+        #list{
+            li{
+                a{
+                    color: white;
+                    font-size: $font-size-small;
+                    
+                }
+                
+                
+    
+            }
+            
+        }
+    }
+    #main{
+    
+        #carrusel{
+          
+            .overlay{
+                
+                .container{
+                
+                   
+                    .row{
+                        h1{
+                            font-weight: 800;
+                            font-size: $font-size-xbig;
+                        }
+                        .btn-outline-light{
+                            font-size: $font-size-small;
+                        }
+                        .btn-platzi{
+                            
+                            font-size: $font-size-small;
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
+    
+        .carousel-inner{
+            img{
+                height: 70vh;
+                object-fit: cover;
+                
+            }
+        }
+    }
+
+
+    #oradores{
+        .container{
+            .row{
+                .imagen{
+                    height: 300px;
+                    object-fit: cover;
+                }
+                h3{
+                    font-size: $font-size-big;
+                }
+                p{
+                    font-size: $font-size-small;
+                }
+                
+            }
+        }
+    }
+
+#fecha{
+    .direccion{
+       
+        p{
+            font-size: $font-size-small;
+           
+        }
+        a{
+            font-size: $font-size-small;
+    
+        }
+    }
+}
+
+
+    footer{
+        .container{
+            .row{
+                .links{
+                    a{
+                        
+                        font-size: $font-size-small;
+                    }
+                }
+            }
+        }
+    }
+}
